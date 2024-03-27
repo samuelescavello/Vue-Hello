@@ -12,9 +12,10 @@
 <body>
     <div id="app">
        <div v-html= 'message'></div>
-       <div v-html="messageTwo" ></div>
+       <div><h2>{{messageTwo}}</h2></div>
        <div v-html="mexFoto"></div>
        <img :src="foto" :alt="altfoto">
+       <p @click="this.message='<h3>ciao</h3>'">ciaooo</p>
 
     </div>
 
